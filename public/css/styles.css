@@ -1,0 +1,414 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+nav {
+  background-color: #f16726;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.logo {
+  max-width: 150px; /* Adjust the logo size */
+  margin: 0 auto; /* Center the logo */
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #f16726; 
+}
+
+/* Form Styles */
+#listingForm {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#listingForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+#listingForm input, #listingForm textarea, #listingForm button {
+  width: 95%; 
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#listingForm textarea {
+  resize: none;
+  height: 100px;
+}
+
+#listingForm button {
+  width: 150px; 
+  margin-top: 10px;
+  background-color: #f16726;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#listingForm button:hover {
+  background-color: #bf501b;
+}
+
+/* Add CSS for Active Links */
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;;
+  color: #fff;
+  background-color: #bf501b;
+  padding: 5px 10px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #listingForm {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #listingForm input, #listingForm textarea, #listingForm button {
+    font-size: 14px; 
+    padding: 8px;
+  }
+
+  #listingForm button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* Table Styles */
+table {
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f16726;
+  color: #fff; 
+  font-weight: 500;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.table-container {
+  max-width: 90%; 
+  margin: 20px auto;
+  overflow-x: auto; 
+}
+
+/* Buttons in the Actions Column */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #4caf50; /* Green for View button */
+}
+
+.btn-edit {
+  background-color: #f16726; /* Orange for Edit button */
+}
+
+.btn-delete {
+  background-color: #e53935; /* Red for Delete button */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design for Table */
+@media (max-width: 768px) {
+  table th, table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  table th, table td {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}
+
+/* View Page Styling */
+.page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.listing-details {
+  margin: 20px 0;
+}
+
+.listing-details p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Dark text color */
+}
+
+.listing-details p strong {
+  color: #f16726; /* Orange for labels */
+  font-weight: 500;
+}
+
+/* Back Button */
+.btn-back {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f16726; /* Orange for the back button */
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #bf501b; /* Darker orange on hover */
+}
+
+/* Responsive Design for View Page */
+@media (max-width: 768px) {
+  .page-container {
+    max-width: 90%; /* Adjust container width for tablets */
+    padding: 15px;
+  }
+
+  .listing-details p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .btn-back {
+    font-size: 12px; /* Smaller button for smaller screens */
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-details p {
+    font-size: 12px; /* Further reduce font size for mobile */
+  }
+
+  .btn-back {
+    font-size: 10px; /* Smaller button for mobile */
+    padding: 6px 10px;
+  }
+}
+/* Edit Page Styling */
+.edit-container {
+  max-width: 600px; /* Limit the width of the container */
+  margin: 20px auto; /* Center the container */
+  background: #fff; /* White background for the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h1 {
+  text-align: center;
+  color: #f16726; /* Orange for headings */
+  margin-bottom: 20px;
+}
+
+.edit-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-container label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333; /* Dark text color */
+}
+
+.edit-container input, .edit-container textarea, .edit-container button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-container textarea {
+  resize: none;
+  height: 100px;
+}
+
+.edit-container button {
+  background-color: #f16726; /* Orange for buttons */
+  color: #fff; /* White text for buttons */
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.edit-container button:hover {
+  background-color: #bf501b; /* Darker orange on hover */
+}
+
+/* Responsive Design for Edit Page */
+@media (max-width: 768px) {
+  .edit-container {
+    max-width: 90%; /* Adjust container width for tablets */
+    padding: 15px;
+  }
+
+  .edit-container input, .edit-container textarea, .edit-container button {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-container input, .edit-container textarea, .edit-container button {
+    font-size: 12px; /* Further reduce font size for mobile */
+    padding: 6px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: blue;
+  color: white;
+}
+
+.btn-save {
+  background-color: green;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+}
+
+.btn-delete {
+  background-color: gray;
+  color: white;
+}
+
+/* Styling for error messages */
+.alert.alert-danger {
+  max-width: 600px;
+  margin: 20px auto; /* Center the message horizontally */
+  padding: 15px;
+  border: 1px solid #f5c6cb; /* Light red border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  font-size: 14px; /* Font size for readability */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
